@@ -1,0 +1,22 @@
+// :host {
+//   overflow-x: hidden;
+//   overflow-y: auto;
+// }
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.dialog-title {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.buttons {
+  margin-top: 1.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

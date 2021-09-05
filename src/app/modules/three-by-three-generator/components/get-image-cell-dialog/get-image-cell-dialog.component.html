@@ -1,0 +1,21 @@
+<form #form="ngForm" (submit)="form.valid && saveImage()">
+  <mat-form-field class="w-100" appearance="outline" image-upload (images)="getFileImage($event[0])">
+    <mat-label>Image file</mat-label>
+
+    <input matInput type="text" name="image" readonly [(ngModel)]="imageName" />
+  </mat-form-field>
+
+  <shared-divider class="mb-3">or</shared-divider>
+
+  <mat-form-field class="w-100" appearance="outline">
+    <mat-label>Image url</mat-label>
+
+    <input matInput type="url" name="url" (ngModelChange)="urlSet()" [(ngModel)]="url" />
+  </mat-form-field>
+
+  <div class="buttons">
+    <button type="button" mat-stroked-button mat-dialog-close cdkFocusInitial>Close</button>
+
+    <button type="submit" mat-stroked-button [disabled]="!url && !imageName">Save</button>
+  </div>
+</form>

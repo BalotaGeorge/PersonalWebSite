@@ -1,0 +1,16 @@
+:host {
+  display: flex;
+  align-items: center;
+  color: var(--general-color2);
+  width: 100%;
+}
+
+span {
+  padding: 0 0.25rem;
+  user-select: none;
+}
+
+div {
+  width: 100%;
+  border-top: 1px solid var(--general-color2);
+}

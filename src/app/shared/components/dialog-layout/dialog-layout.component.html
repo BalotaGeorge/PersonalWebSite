@@ -1,0 +1,13 @@
+<mat-toolbar>
+  <span class="dialog-title text-xl text-uppercase">
+    {{ data.title }}
+  </span>
+
+  <button mat-icon-button mat-dialog-close tabindex="-1" class="ml-auto">
+    <mat-icon>close</mat-icon>
+  </button>
+</mat-toolbar>
+
+<div class="p-4">
+  <ng-container #componentContainer></ng-container>
+</div>

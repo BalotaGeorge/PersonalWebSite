@@ -1,0 +1,10 @@
+<ng-container *ngFor="let select of selectList">
+  <button
+    mat-button
+    class="text-lg p-3"
+    [tabindex]="select === selected ? 0 : -1"
+    (click)="selectedChange.emit(select)"
+  >
+    {{ select }}
+  </button>
+</ng-container>

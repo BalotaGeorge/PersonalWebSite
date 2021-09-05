@@ -1,1 +1,69 @@
-/* You can add global styles to this file, and also import other style files */
+@import "./material-theme.scss";
+@import "./variables.scss";
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+
+  &:hover {
+    color: inherit;
+  }
+}
+
+.custom-dialog {
+  .mat-dialog-container {
+    padding: 0 !important;
+  }
+}
+
+.error-dialog {
+  .mat-dialog-container {
+    shared-dialog-layout {
+      div {
+        background-color: #4b2424;
+      }
+    }
+  }
+}
+
+.text-xxs {
+  font-size: 0.25rem;
+}
+
+.text-xs {
+  font-size: 0.5rem;
+}
+
+.text-sm {
+  font-size: 0.75rem;
+}
+
+.text-md {
+  font-size: 1rem;
+}
+
+.text-lg {
+  font-size: 1.25rem;
+}
+
+.text-xl {
+  font-size: 1.5rem;
+}
+
+.text-xxl {
+  font-size: 1.75rem;
+}
+
+.text-xxxl {
+  font-size: 2rem;
+}

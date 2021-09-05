@@ -1,0 +1,13 @@
+<div class="app-wrapper mat-app-background" [ngClass]="{ 'dark-mode': themeService.darkMode }">
+  <header>
+    <entry-point-header></entry-point-header>
+  </header>
+
+  <section>
+    <router-outlet></router-outlet>
+  </section>
+
+  <footer>
+    <entry-point-footer></entry-point-footer>
+  </footer>
+</div>

@@ -1,0 +1,33 @@
+<mat-toolbar>
+  <img class="me-3" src="../../../../assets/bg.png" alt="bg" height="75%">
+
+  <a class="text-xxxl" routerLink="/">Personal Projects</a>
+
+  <button mat-icon-button [matMenuTriggerFor]="menu" class="ms-auto">
+    <mat-icon>menu</mat-icon>
+  </button>
+
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item role="menuitemcheckbox">
+      <mat-slide-toggle
+        labelPosition="before"
+        name="darkTheme"
+        [checked]="themeService.darkMode"
+        (change)="toggleDarkTheme($event)"
+        (click)="$event.stopPropagation()"
+      >
+        Dark theme
+      </mat-slide-toggle>
+    </button>
+
+    <button mat-menu-item>Item 1</button>
+
+    <button mat-menu-item>Item 2</button>
+
+    <button mat-menu-item>Item 3</button>
+
+    <button mat-menu-item>Item 4</button>
+
+    <button mat-menu-item>Item 5</button>
+  </mat-menu>
+</mat-toolbar>

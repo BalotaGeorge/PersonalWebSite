@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "balota-george": {
+      "hosting": {
+        "projects-project-ui": [
+          "balota-george"
+        ]
+      }
+    }
+  }
+}
