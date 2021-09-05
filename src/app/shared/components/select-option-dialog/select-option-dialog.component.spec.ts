@@ -1,16 +1,15 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from "@angular/core/testing";
 
-import { SelectOptionDialogComponent } from './select-option-dialog.component';
+import { SelectOptionDialogComponent } from "./select-option-dialog.component";
 
-describe('SelectOptionDialogComponent', () => {
+describe("SelectOptionDialogComponent", () => {
   let component: SelectOptionDialogComponent;
   let fixture: ComponentFixture<SelectOptionDialogComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SelectOptionDialogComponent ]
-    })
-    .compileComponents();
+      declarations: [SelectOptionDialogComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {
@@ -19,7 +18,7 @@ describe('SelectOptionDialogComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it("should create", () => {
     expect(component).toBeTruthy();
   });
 });

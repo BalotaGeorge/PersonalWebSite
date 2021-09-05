@@ -1,16 +1,15 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from "@angular/core/testing";
 
-import { ErrorDialogLayoutComponent } from './error-dialog-layout.component';
+import { ErrorDialogLayoutComponent } from "./error-dialog-layout.component";
 
-describe('ErrorDialogLayoutComponent', () => {
+describe("ErrorDialogLayoutComponent", () => {
   let component: ErrorDialogLayoutComponent;
   let fixture: ComponentFixture<ErrorDialogLayoutComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ErrorDialogLayoutComponent ]
-    })
-    .compileComponents();
+      declarations: [ErrorDialogLayoutComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {
@@ -19,7 +18,7 @@ describe('ErrorDialogLayoutComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it("should create", () => {
     expect(component).toBeTruthy();
   });
 });
