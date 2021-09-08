@@ -10,6 +10,10 @@ const routes: Routes = [
         (m) => m.ThreeByThreeGeneratorModule,
       ),
   },
+  {
+    path: "todolist",
+    loadChildren: () => import("../modules/todo-list/todo-list.module").then((m) => m.TodoListModule),
+  },
   { path: "", component: ProjectsPageComponent },
   { path: "**", redirectTo: "" },
 ];

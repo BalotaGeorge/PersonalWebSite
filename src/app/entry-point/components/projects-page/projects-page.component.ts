@@ -9,6 +9,10 @@ import { IProjectModel } from "../../models/project-model";
 export class ProjectsPageComponent {
   public projects: Array<IProjectModel> = [
     {
+      name: "todo list",
+      path: "todolist",
+    },
+    {
       name: "3x3 generator",
       path: "3x3generator",
     },

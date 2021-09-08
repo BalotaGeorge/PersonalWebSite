@@ -1,6 +1,6 @@
 .grid3x3 {
   margin: 0 auto;
-  width: clamp(250px, 50vw, 700px);
+  width: 700px;
   aspect-ratio: 1 / 1;
   display: grid;
 
@@ -17,5 +17,11 @@
       height: 100%;
       object-fit: cover;
     }
+  }
+}
+
+@media only screen and (max-width: 732px) {
+  .grid3x3 {
+    width: 100%;
   }
 }

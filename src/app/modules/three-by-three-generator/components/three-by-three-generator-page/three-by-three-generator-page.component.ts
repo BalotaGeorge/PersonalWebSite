@@ -34,7 +34,7 @@ export class ThreeByThreeGeneratorPageComponent implements OnInit {
   }
 
   public async setCellImage(index: number): Promise<void> {
-    const dialog = await this.dialogService.openDialog(GetImageCellDialogComponent, "select image");
+    const dialog = await this.dialogService.openDialog(GetImageCellDialogComponent, "select image", "medium");
 
     dialog.componentInstance.embeddedComponentInstance.image.subscribe((result: IImageModel) => {
       this.grid[index] = result;

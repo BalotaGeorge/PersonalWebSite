@@ -20,7 +20,6 @@ export class DialogService {
         ...(size === "small" && { width: "500px" }),
         ...(size === "medium" && { width: "850px" }),
         ...(size === "large" && { width: "1200px" }),
-        ...(size === "flexible" && { minWidth: "600px" }),
         maxWidth: "100vw",
         panelClass: panelClass ? ["custom-dialog", panelClass] : "custom-dialog",
         autoFocus: true,

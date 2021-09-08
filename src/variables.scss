@@ -1,4 +1,30 @@
 :root {
   --general-color: white;
   --general-color2: rgba(255, 255, 255, 0.12);
+  --width-coeficient: 1;
 }
+
+@media only screen and (max-width: 1600px) {
+  :root {
+    --width-coeficient: 0.9;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  :root {
+    --width-coeficient: 0.8;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  :root {
+    --width-coeficient: 0.7;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  :root {
+    --width-coeficient: 0.6;
+  }
+}
+
