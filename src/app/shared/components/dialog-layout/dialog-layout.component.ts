@@ -14,7 +14,6 @@ import { GetImageCellDialogComponent } from "src/app/modules/three-by-three-gene
 export class DialogLayoutComponent<T> implements AfterViewInit {
   @ViewChild("componentContainer", { read: ViewContainerRef }) private componentContainer!: ViewContainerRef;
 
-  // @Output() embeddedComponentInstance = new BehaviorSubject<T | null>(null);
   @Output() embeddedComponentInstanceEmitter = new EventEmitter<void>();
 
   public embeddedComponentInstance!: T;
@@ -34,6 +33,5 @@ export class DialogLayoutComponent<T> implements AfterViewInit {
 
     this.embeddedComponentInstance = componentRef.instance;
     this.embeddedComponentInstanceEmitter.emit();
-    // this.embeddedComponentInstance.next(componentRef.instance);
   }
 }

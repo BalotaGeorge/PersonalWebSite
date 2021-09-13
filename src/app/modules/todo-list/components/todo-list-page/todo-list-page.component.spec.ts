@@ -1,16 +1,15 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from "@angular/core/testing";
 
-import { TodoListPageComponent } from './todo-list-page.component';
+import { TodoListPageComponent } from "./todo-list-page.component";
 
-describe('TodoListPageComponent', () => {
+describe("TodoListPageComponent", () => {
   let component: TodoListPageComponent;
   let fixture: ComponentFixture<TodoListPageComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ TodoListPageComponent ]
-    })
-    .compileComponents();
+      declarations: [TodoListPageComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {
@@ -19,7 +18,7 @@ describe('TodoListPageComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it("should create", () => {
     expect(component).toBeTruthy();
   });
 });

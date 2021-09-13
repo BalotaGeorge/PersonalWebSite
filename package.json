@@ -1,5 +1,5 @@
 {
-  "name": "projects-project-ui",
+  "name": "bgspace",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -8,7 +8,8 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "prettier": "prettier --write \"src/**/*.{json,ts,scss,html}\"",
-    "lint": "eslint \"src/**/*.ts\" --fix"
+    "lint": "eslint \"src/**/*.ts\" --fix",
+    "deploy": "npm run prettier && npm run lint && ng deploy"
   },
   "private": true,
   "dependencies": {
