@@ -9,6 +9,7 @@ import { ErrorDialogLayoutComponent } from "./components/error-dialog-layout/err
 import { DividerComponent } from "./components/divider/divider.component";
 import { SelectOptionDirective } from "./directives/select-option.directive";
 import { SelectOptionDialogComponent } from "./components/select-option-dialog/select-option-dialog.component";
+import { ResponsiveClassDirective } from "./directives/responsive-class.directive";
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { SelectOptionDialogComponent } from "./components/select-option-dialog/s
     DividerComponent,
     SelectOptionDirective,
     SelectOptionDialogComponent,
+    ResponsiveClassDirective,
   ],
   imports: [MaterialModule, CommonModule, FormsModule],
   exports: [
@@ -31,6 +33,7 @@ import { SelectOptionDialogComponent } from "./components/select-option-dialog/s
     ErrorDialogLayoutComponent,
     DividerComponent,
     SelectOptionDirective,
+    ResponsiveClassDirective,
   ],
 })
 export class SharedModule {}

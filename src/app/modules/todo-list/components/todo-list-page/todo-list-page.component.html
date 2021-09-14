@@ -1,1 +1,40 @@
-<p>todo-list-page works!</p>
+<div class="row">
+  <div class="col-md-6" responsive-class="mb-3.md">
+    <ng-container *ngFor="let todo of listOfTodos">
+      <div class="w-100 d-flex align-items-center justify-content-between">
+        <span>{{ todo.name }} {{ todo.startDate }}</span>
+
+        <button type="button" mat-mini-fab color="warn" (click)="removeTodo(todo)"><mat-icon>delete</mat-icon></button>
+      </div>
+    </ng-container>
+  </div>
+
+  <div class="col-md-6">
+    <form #form="ngForm" class="w-100" (submit)="addTodo()">
+      <mat-form-field class="w-100" appearance="outline">
+        <mat-label>Todo</mat-label>
+
+        <textarea matInput name="todoName" required [(ngModel)]="todo.name"></textarea>
+      </mat-form-field>
+
+      <mat-form-field class="w-100" appearance="outline">
+        <mat-label>Date</mat-label>
+
+        <input
+          matInput
+          name="todoDate"
+          required
+          [min]="minCalendarDate"
+          [matDatepicker]="picker"
+          [(ngModel)]="todo.startDate"
+        />
+
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+
+      <button type="submit" mat-raised-button color="primary">Add todo</button>
+    </form>
+  </div>
+</div>
